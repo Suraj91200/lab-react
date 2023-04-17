@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+:root{
+  --header-height: ;
+
+
+  --first-color: hsl(27, 34%, 59%);
+  --first-color-light: hsl(42,13%,34%);
+  --text-color: hsl(0, 0%, 100%);
+  --title-color: hsl(0,0%, 67%);
+  --bg-color: hsl(0,0%,8%);
+  --container-color: hsl(0,0%,6%);
+  --hsla: hsla(0,0%,0%, 0.75);
+
+
+  --body-font: 'Kanit';
+  --biggest-font-size: 4.125rem;
+  --bigger-font-size: 3.125rem;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 1.875rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.2rem;
+  --largest-font-size: 1.357rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.124rem;
+  --normal-font-size: 1rem;
+
+
+  --radius: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,textarea,body{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  color: var(--text-color);
+  background: var(--bg-color);
 }
-
-.App-link {
-  color: #61dafb;
+h1,h2,h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--title-color);
+  font-weight: 400;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  list-style: none;
+}
+p{
+  line-height: 1.8;
+}
+a{
+  text-decoration: none;
+}
+input,textarea{
+  border: none;
+  outline: none;
+}
+img{
+  max-height: 100%;
 }
